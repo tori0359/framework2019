@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-test page
+	<h1>p2 page</h1>
 </body>
 </html>

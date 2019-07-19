@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-test page
+	<h1>ex04 page</h1>
 </body>
 </html>

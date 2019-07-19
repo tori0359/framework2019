@@ -7,6 +7,15 @@
 <title>Insert title here</title>
 </head>
 <body>
-test page
+	<%
+		String msg = "hello el";
+		//값을 담아야 el에 전달할 수 있다.
+		pageContext.setAttribute("msg", msg);
+	%>
+	<h1>동작</h1>
+	<p>${pageScope.msg }</p>
+	<p>${requestScope.msg }</p>
+	<p>${sessionScope.msg }</p>
+	<p>${applicationScope.msg }</p>
 </body>
 </html>

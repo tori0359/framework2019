@@ -7,6 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-test page
+	<h1>결과</h1>
+	<p><%=request.getAttribute("id") %></p>
+	<p><%=request.getAttribute("num") %></p>
 </body>
 </html>

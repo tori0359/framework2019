@@ -7,6 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-test page
+	<h1>hello struts2</h1>
+	<a href="index.action">[입장]</a>
+	<a href="bbs/list.action">[리스트]</a>
 </body>
 </html>

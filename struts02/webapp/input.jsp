@@ -7,6 +7,19 @@
 <title>Insert title here</title>
 </head>
 <body>
-test page
+	<h1>회원가입</h1>
+	<form action="result.action">
+		<div>
+			<label for="id">id</label>
+			<input type="text" name="id" id="id" />
+		</div>
+		<div>
+			<label for="pw">pw</label>
+			<input type="text" name="pw" id="pw" />
+		</div>
+		<div>
+			<button type="submit">전송</button>
+		</div>
+	</form>
 </body>
 </html>

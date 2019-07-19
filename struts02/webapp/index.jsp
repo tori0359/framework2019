@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-test page
+	<h1>HELLO STRUTS2</h1>
+	<a href="ex02.action">link</a>
 </body>
 </html>
