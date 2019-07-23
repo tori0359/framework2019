@@ -40,7 +40,7 @@ public class DispatcherServlet extends HttpServlet{
 			String clInfo = prop.getProperty(key);
 			BitHandlerMapping.setMap(key, clInfo);
 		}
-	}
+	}//! 프로퍼티 세팅 end
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
