@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.bit.framwork</groupId>
+  <artifactId>bitFramework01</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <name>bitFramework</name>
+  <dependencies>
+ 	<!-- https://mvnrepository.com/artifact/com.oracle.jdbc/ojdbc14 -->
+	<dependency>
+	    <groupId>com.oracle.jdbc</groupId>
+	    <artifactId>ojdbc14</artifactId>
+	    <version>10.2.0.1.0</version>
+	</dependency>
+	<dependency>
+		<groupId>taglibs</groupId>
+		<artifactId>standard</artifactId>
+		<version>1.1.2</version>
+	</dependency>
+	<dependency>
+	  <groupId>javax.servlet</groupId>
+	  <artifactId>jstl</artifactId>
+	  <version>1.2</version>
+	</dependency>
+  </dependencies>
+  <build>
+  	<!-- 소스코드 디렉토리 지정 -->
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.1</version>
+        <configuration>
+          <!-- soure : 컴파일용, target : 실행용 -->
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <!-- 버전이 3.0이상인 경우 낮은 버전의 이클립스는 동작을 하지 않는다. -->
+        <version>2.4</version>
+        <configuration>
+          <!-- warSourceDirectory이 없으면 src 밑에 있어야 한다. -->
+          <warSourceDirectory>webapp</warSourceDirectory>
+          <!-- web.xml이 없는 경우 컴파일이 진행이 안된다. -->
+          <failOnMissingWebXml>false</failOnMissingWebXml>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
